@@ -8,7 +8,7 @@
 
 // FIXME -
 // - why cant' do if (self.tempTag == FIELD_ONE_TAG) ???
-// - change button to green, how?
+// - change button to green, how? Why button move up when I run app?
 // - is tags the way to determine which UITextField ?
 
 #import "TempConverterViewController.h"
@@ -76,15 +76,14 @@
     NSLog(@"tag: %d",self.tempTag);
     // C x 9/5 + 32 = °F. (°F - 32) x 5/9 = °C
     
-    if (self.tempTag == 1) {
+    if (self.tempTag == self.fahTempField.tag) {
         float cVal = (far1 - 32) * 5/9;
         self.celTempField.text = [NSString stringWithFormat:@"%f", cVal];
     }
-    else if (self.tempTag == 2) {
+    else if (self.tempTag == self.celTempField.tag) {
         float fVal = (cel1 * 9/5) + 32;
         self.fahTempField.text = [NSString stringWithFormat:@"%f", fVal];
     }
     
-    // calc
 }
 @end
