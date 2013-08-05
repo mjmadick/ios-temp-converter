@@ -18,9 +18,8 @@
     // Override point for customization after application launch.
     
     TempConverterViewController *tempConverterViewController = [[TempConverterViewController alloc] init];
-//    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:tipViewController];
-    self.window.rootViewController = tempConverterViewController;
-
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:tempConverterViewController];
+    self.window.rootViewController = nvc;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
