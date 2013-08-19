@@ -29,12 +29,15 @@
     if (self) {
         // Custom initialization
         self.title = @"Temp Converter";
+        NSLog(@"what up");
     }
     return self;
 }
 
 - (void)viewDidLoad
 {
+    NSLog(@"viewDidLoad");
+
     [super viewDidLoad];
     self.fahTempField.delegate = self;
     self.fahTempField.tag = FIELD_ONE_TAG;
@@ -52,6 +55,8 @@
 }
 #pragma mark - UITextField delegates
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    NSLog(@"begin editing %d", textField.tag);
+
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonItemStyleDone target:self action:@selector(onDoneButton)];
     return YES;
 }

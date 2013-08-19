@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "TempConverterViewController.h"
 
-
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -19,6 +18,7 @@
     
     TempConverterViewController *tempConverterViewController = [[TempConverterViewController alloc] init];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:tempConverterViewController];
+        
     self.window.rootViewController = nvc;
     
     self.window.backgroundColor = [UIColor whiteColor];

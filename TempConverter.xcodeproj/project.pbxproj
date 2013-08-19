@@ -447,6 +447,7 @@
 				0AB67B7617A7955C0098FE77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AB67B7717A7955C0098FE77 /* Build configuration list for PBXNativeTarget "TempConverterTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +456,7 @@
 				0AB67B7917A7955C0098FE77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
